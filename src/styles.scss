@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 /* 设置foot撑开到底部 start */
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';/*引入官方主题*/
+@import 'theme.scss';/*引入官方主题*/
 html,body,app-root,mat-sidenav-container,.site{
     width: 100%;
     height: 100%;
@@ -17,4 +17,8 @@ main{
 
 .fill-remaining-space{
     flex:1 1 auto;
+}
+
+.full-width{
+    width: 100%;
 }
