@@ -4,7 +4,9 @@ import { DomSanitizer } from '@angular/platform-browser';
 export const loadSvgResources = (ir: MatIconRegistry, ds: DomSanitizer) => {
     const imgDir = 'assets/img';
     const sidebarDir = `${imgDir}/sidebar`;
-    const dayDir = `${imgDir}/days`
+    const dayDir = `${imgDir}/days`;
+    const avatarDir = `${imgDir}/avatar`;
+    ir.addSvgIconSetInNamespace('avatars', ds.bypassSecurityTrustResourceUrl(`${avatarDir}/avatars.svg`));
     //将icon加入注册表
     ir.addSvgIcon('projects', ds.bypassSecurityTrustResourceUrl(`${sidebarDir}/projects.svg`));
     ir.addSvgIcon('project', ds.bypassSecurityTrustResourceUrl(`${sidebarDir}/project.svg`));
