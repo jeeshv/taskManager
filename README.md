@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Material 2 change log
+
+https://github.com/angular/material2/blob/master/CHANGELOG.md
+
+## Material help
+
+https://material.angular.io/components/input/api
+
+## it∞Ó∞Ô√¶ Material
+
+https://ithelp.ithome.com.tw/users/20020617/ironman/1263
+
+
