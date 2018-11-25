@@ -1,4 +1,4 @@
-# TaskManager ÈÎÎñ¹ÜÀíÏµÍ³
+# TaskManager ä»»åŠ¡ç®¡ç†ç³»ç»Ÿ
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 
@@ -34,8 +34,10 @@ https://github.com/angular/material2/blob/master/CHANGELOG.md
 
 https://material.angular.io/components/input/api
 
-## it°î°ïÃ¦ Material
+## ité‚¦å¸®å¿™ Material
 
 https://ithelp.ithome.com.tw/users/20020617/ironman/1263
+
+https://ithelp.ithome.com.tw/articles/10194067
 
 
