@@ -6,6 +6,7 @@ import { CoreModule } from './core/core.module';
 import { HomeComponent } from './home/home.component';
 import { DemoMaterialModule } from './material-module';
 import { LoginModule } from './login/login.module';
+import { ProjectModule } from './project/project.module';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { LoginModule } from './login/login.module';
     MatSidenavModule,
     DemoMaterialModule,
     CoreModule,
-    LoginModule
+    LoginModule,
+    ProjectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
