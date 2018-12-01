@@ -46,4 +46,7 @@ https://material.io/components/
 ## 一些优秀的Material设计
 materialdesignblog.com/material-design-showcase/
 
+## 谷歌浏览器用来调试Angular2代码的插件
+Augury
+
 

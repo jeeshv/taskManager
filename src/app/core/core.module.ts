@@ -1,6 +1,7 @@
 import { NgModule, SkipSelf, Optional } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { AppRoutingModule } from '../app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconRegistry, MatNativeDateModule } from '@angular/material';
 import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
@@ -10,10 +11,12 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { loadSvgResources } from '../utils/svg.util';
+import 'hammerjs';
 
 @NgModule({
   imports: [
     FormsModule,
+    AppRoutingModule,
     ReactiveFormsModule,
     BrowserModule,
     BrowserAnimationsModule,
@@ -28,10 +31,15 @@ import { loadSvgResources } from '../utils/svg.util';
     SideBarComponent
   ],
   exports: [
+    AppRoutingModule,
     HeaderComponent,
     FooterComponent,
     SideBarComponent
+  ],
+  providers:[
+    {provide:'BASE_CONFIG',useValue:'http://localhost:3000'}
   ]
+
 })
 export class CoreModule {
   // @Optional() @SkipSelf() 避免死循环

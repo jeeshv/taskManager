@@ -1,7 +1,7 @@
 <mat-sidenav-container [class.myapp-dark-theme]="darkTheme">
   <mat-sidenav #sidenav mode="side" opened="true">
     <!-- mode:value= over side push,如果是： position="end"则在右侧 -->
-    <app-side-bar></app-side-bar>
+    <app-side-bar (navClick)="sidenav.toggle()"></app-side-bar>
   </mat-sidenav>
   <!-- <mat-sidenav opened="true" mode="side" position="end">
     <div>我是右边选单</div>

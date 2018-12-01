@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 /* import { trigger, state, transition, style, animate, keyframes } from '@angular/animations'; */
 
 @Component({
@@ -32,13 +32,17 @@ import { Component } from '@angular/core';
   ] */
 })
 export class AppComponent {
-  squareState: string;
+  /* squareState: string; */ //测试动画的数据
   darkTheme = false;
+
+  constructor(@Inject('BASE_CONFIG')config){
+    console.log(config);
+  }
   switchTheme(dark) {
     this.darkTheme = dark.checked;;
   }
 
   /* onClick() {
-    this.squareState = this.squareState == 'red' ? 'green' : 'red';
+    this.squareState = this.squareState == 'red' ? 'green' : 'red'; //测试动画的数据
   } */
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { getDate, getMonth } from 'date-fns';
 import { Router } from '@angular/router';
 @Component({
@@ -13,7 +13,8 @@ export class SideBarComponent implements OnInit {
     { name: '周视图', icon: 'week', tip: '按周查看您的任务' },
     { name: '日视图', icon: '', tip: '按日查看您的任务' }
   ]
-  constructor(private router :Router) { }
+  @Output() navClick = new EventEmitter<void>();
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.today = `day${getDate(new Date())}`;
@@ -21,9 +22,12 @@ export class SideBarComponent implements OnInit {
     this.items[0].icon = month;
     this.items[2].icon = this.today;
   }
-
-  project(){
-    this.router.navigate(['/project' ]);
+  onNavClick(){
+    this.navClick.emit();//发射点击事件
   }
+
+  /*  project(){
+     this.router.navigate(['/project' ]);
+   } */
 
 }
