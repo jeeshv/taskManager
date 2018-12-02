@@ -155,6 +155,11 @@ export class TaskHomeComponent implements OnInit {
         break;
     }
   }
+
+  handleQuickTask(desc: string) {
+    console.log("增加新任务");
+    console.log(desc);
+  }
   add() {
     alert("啥也没做")
   }

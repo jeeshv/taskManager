@@ -39,11 +39,14 @@ import {
 } from '@angular/material';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import { DirectiveModule } from '../directive/directive.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
@@ -84,6 +87,8 @@ import { DirectiveModule } from '../directive/directive.module';
   exports: [
     // 作为共享模块，把导入进来的模块再导出去
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,

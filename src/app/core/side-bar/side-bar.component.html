@@ -1,6 +1,7 @@
 <mat-nav-list>
     <h3 mat-subheader>项目</h3>
-    <mat-list-item [routerLink]="['/project']" (click)="onNavClick()">
+    <mat-list-item [routerLink]="['/project']">
+   <!--  <mat-list-item [routerLink]="['/project']" (click)="onNavClick()"> -->
         <mat-icon mat-list-icon svgIcon='projects' ></mat-icon>
         <span mat-line>项目首页</span>
         <span mat-line mat-subheader>查看您的所有项目</span>
@@ -10,5 +11,17 @@
         <mat-icon mat-list-icon svgIcon='{{item.icon}}'></mat-icon>
         <span mat-line>{{item.name}}</span>
         <span mat-line mat-subheader>查看您的所有项目</span>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['/ReactiveLogin']">
+        <mat-icon mat-list-icon svgIcon='projects' ></mat-icon>
+        <span mat-line mat-subheader>普通响应式表单</span>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['/ReactiveRegist']">
+        <mat-icon mat-list-icon svgIcon='projects' ></mat-icon>
+        <span mat-line mat-subheader>普通响应式表单-注册</span>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['/TemplateForm']">
+        <mat-icon mat-list-icon svgIcon='projects' ></mat-icon>
+        <span mat-line mat-subheader>模版式表单验证</span>
     </mat-list-item>
 </mat-nav-list>
