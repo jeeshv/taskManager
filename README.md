@@ -49,4 +49,7 @@ materialdesignblog.com/material-design-showcase/
 ## 谷歌浏览器用来调试Angular2代码的插件
 Augury
 
+## How to import zTree && else plugs
+https://gitee.com/zt_zhong/CodeBe
+
 
