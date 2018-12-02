@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { loadSvgResources } from '../utils/svg.util';
 import 'hammerjs';
+import 'rxjs/add/operator/take';
 
 @NgModule({
   imports: [
@@ -23,12 +24,12 @@ import 'hammerjs';
     SharedModule,
     HttpModule,
     HttpClientModule,
-    MatNativeDateModule
+    MatNativeDateModule,
   ],
   declarations: [
     HeaderComponent,
     FooterComponent,
-    SideBarComponent
+    SideBarComponent,
   ],
   exports: [
     AppRoutingModule,

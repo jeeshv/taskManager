@@ -38,6 +38,7 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { DirectiveModule } from '../directive/directive.module';
 
 
 @NgModule({
@@ -78,6 +79,7 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
+    DirectiveModule,
   ],
   exports: [
     // 作为共享模块，把导入进来的模块再导出去
@@ -117,6 +119,7 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
+    DirectiveModule,
   ],
   entryComponents:[ConfirmDialogComponent],
   declarations: [ConfirmDialogComponent]
