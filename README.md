@@ -58,4 +58,5 @@ http://www.rxmarbles.com
 ## How to import zTree && else plugs
 https://gitee.com/zt_zhong/CodeBe
 
-
+## 安装一个用于快速搭建REST API的利器
+npm install -g json-server
