@@ -1,5 +1,5 @@
 export interface User {
-    id?:string;
+    id?:string;//?表示id可能为空
     email:string;
     password:string;
     name:string;

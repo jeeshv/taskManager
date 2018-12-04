@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { QuoteService } from '../../services/quote.service';
+import { Quote } from '../../domain/quote.model';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,12 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  quote:Quote;
   myGroup:FormGroup;
-  constructor(private fb:FormBuilder) { //FormBuilder用于简化数据初始化的工作
-
+  constructor(
+    private quoteService$:QuoteService,//$ 符号 = 是一个流
+    private fb:FormBuilder,) { //FormBuilder用于简化数据初始化的工作
+      this.quoteService$.getQuote().subscribe(q => this.quote = q);
   }
 
   ngOnInit() {
