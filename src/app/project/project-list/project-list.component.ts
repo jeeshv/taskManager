@@ -57,7 +57,7 @@ export class ProjectListComponent implements OnInit {
     const returnData = this.dialog.open(ConfirmDialogComponent, { data: { title: "删除项目", content: "确认删除？" } });
     returnData.afterClosed().subscribe(result => {
       console.log(result);
-      this.projects = this.projects.filter(p => p.id !== project.id);
+      this.projects = this.projects.filter(p => p.id !== project.id); // filter 过滤掉一些元素，返回一个新数组
       this.cd.markForCheck();//来检查我
     });//弹框传递回来的值
 
