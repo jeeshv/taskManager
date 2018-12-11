@@ -39,10 +39,8 @@ import { ServicesModule } from '../services/services.module';
     FooterComponent,
     SideBarComponent
   ],
-  providers:[
-    {provide:'BASE_CONFIG',useValue:{
-      uri:'http://localhost:3000',
-    }}
+  providers: [
+    {provide: 'BASE_CONFIG', useValue: {uri: 'http://localhost:3000',mmall:'http://192.168.9.101:8080'},}
   ]
 
 })

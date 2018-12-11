@@ -60,6 +60,13 @@ https://gitee.com/zt_zhong/CodeBe
 
 ## 安装一个用于快速搭建REST API的利器
 npm install -g json-server
+	###用法
+	###根目录下创建一个Mock文件夹
+	###将json数据保存到一个data.json文件中
+	###使用命令 json-server ./mock/data.json 模拟启动了一个后台服务
+	
+	####创建一个rest.http文件
+	####http://localhost:3000/quotes  通过rest.http定义的内容调用接口，获取模拟后台的数据
 
 ## Ts数组用法
 https://blog.csdn.net/honey199396/article/details/80750408
