@@ -10,8 +10,9 @@ export class MmallService {
     private http: Http) {
   }
 
-  get(param: string): Observable<any> {
-    const uri = `${this.config.mmall}/` + param;
-    return this.http.get(uri).map(res => res.json());
+  get(url,param): Observable<any> {
+    const uri = `${this.config.mmall}/` + url;
+    console.log(uri);
+    return this.http.get(uri,param).map(res => res.json());
   }
 }

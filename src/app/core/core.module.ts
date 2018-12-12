@@ -14,6 +14,7 @@ import { loadSvgResources } from '../utils/svg.util';
 import 'hammerjs';
 import 'rxjs/add/operator/take';
 import { ServicesModule } from '../services/services.module';
+import { ApilService } from '../shared/service/http/api.service';
 
 @NgModule({
   imports: [
@@ -40,7 +41,8 @@ import { ServicesModule } from '../services/services.module';
     SideBarComponent
   ],
   providers: [
-    {provide: 'BASE_CONFIG', useValue: {uri: 'http://localhost:3000',mmall:'http://192.168.9.101:8080'},}
+    {provide: 'BASE_CONFIG', useValue: {uri: 'http://localhost:3000',mmall:'http://192.168.9.101:8080'}},
+    ApilService
   ]
 
 })
